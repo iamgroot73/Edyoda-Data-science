@@ -1,13 +1,18 @@
 #Even/Odd
-numbers = input("enter the numbers with one space")
+numbers = input("enter the numbers with one space ")
 num_in_list = numbers.split()
 num_in_tup = tuple(num_in_list)
 count_odd = 0
 count_even = 0
+even=[]
+odd=[]
+
 for x in num_in_tup:
     if not int(x) % 2:
         count_even+=1
+        even.append(x)
     else:
          count_odd+=1
-print("Number of even numbers :",count_even)
-print("Number of odd numbers :",count_odd)
+         odd.append(x)
+print(f"Number of even numbers : {count_even} and numbers are : {even}")
+print(f"Number of odd numbers : {count_odd} and number are : {odd}")
