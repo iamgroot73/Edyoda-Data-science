@@ -1,0 +1,10 @@
+#Reverse
+s = input("enter the string ")
+  
+print ("The original string  is : ",end="")
+print (s)
+str = ""
+for i in s:
+    str = i + str
+print ("The reversed string(using loops) is : ",end="")
+print (str)
